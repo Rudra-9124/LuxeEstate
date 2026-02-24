@@ -1,0 +1,36 @@
+/* Common Page Styles */
+.page-container {
+    padding-top: 100px;
+    /* Offset for sticky navbar */
+    min-height: 100vh;
+}
+
+.page-header {
+    padding: 80px 0;
+    background: linear-gradient(to bottom, var(--color-bg-secondary) 0%, var(--color-bg) 100%);
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+.page-header h1 {
+    font-size: clamp(3rem, 5vw, 4.5rem);
+    color: var(--color-text-primary);
+    margin-bottom: 20px;
+}
+
+.page-header p {
+    font-size: 1.2rem;
+    color: var(--color-text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.properties-page-grid {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+@media (max-width: 768px) {
+    .properties-page-grid {
+        grid-template-columns: 1fr;
+    }
+}
